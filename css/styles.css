@@ -1,6 +1,15 @@
 body {
   font-family: Roboto, Tahoma, sans-serif;
-  color: #212121;
+  color: var(--main-text-color);
+  background-color: var(--primary-white-color);
+  font-size: 14px;
+}
+
+:root {
+  --secondary-text-color: #757575;
+  --main-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
 
 .link {
@@ -8,21 +17,17 @@ body {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .header-link {
@@ -33,56 +38,35 @@ body {
   color: inherit;
 }
 
-.header-link:hover {
-  color: #2196f3;
-}
-
-.header-link:focus {
-  color: #2196f3;
-}
-
-.header-link:active {
-  color: #2196f3;
-}
-
+.header-link:hover,
+.header-link:focus,
+.header-link:active,
 .header-list .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
   list-style: none;
 }
 
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.header-tel:hover {
-  color: #2196f3;
-}
-
-.header-tel:focus {
-  color: #2196f3;
-}
-
+.header-tel,
 .header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
-.header-mail:hover {
-  color: #2196f3;
-}
-
+.address-tel:hover,
+.address-tel:focus,
+.address-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-mail:hover,
 .header-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .hero {
@@ -96,7 +80,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .hero-btn {
@@ -105,19 +89,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
   cursor: pointer;
 }
 
-.hero-btn:hover {
-  background: #188ce8;
-}
-
+.hero-btn:hover,
 .hero-btn:focus {
   background: #188ce8;
 }
@@ -140,10 +118,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
-.skills-text {
+.skills-text,
+.staff-text {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -153,15 +132,6 @@ body {
 
 .staff {
   background: #f5f4fa;
-}
-
-.staff-text {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: inherit;
 }
 
 .staff-name {
@@ -179,7 +149,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .footer {
@@ -191,7 +161,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .address {
@@ -203,17 +173,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
-.address-mail {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
+.address-mail,
 .address-tel {
   font-weight: 400;
   font-size: 14px;
@@ -228,26 +191,22 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.portfolio-btn:hover {
-  color: #ffffff;
-  background: #2196f3;
-}
-
+.portfolio-btn.current,
+.portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
 }
 
 .portfolio-item {
-  background: #ffffff;
+  background: var(--primary-white-color);
 }
 
 .portfolio-tittle {
@@ -255,7 +214,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .porfolio-text {
@@ -263,5 +222,5 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
